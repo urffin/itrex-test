@@ -1,0 +1,76 @@
+dominos {
+    display: block;
+    position: relative;
+}
+
+.bone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.bone-settings {
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+}
+bone, .avaialble-faces {
+    display: block;
+    width: 62px;
+    border: 1px solid black;
+}
+.bone-separator {
+    width: 90%;
+    height: 1px;
+    background-color: black;        
+    margin: auto;
+}
+face {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.face-2, .face-4, .face-5 {
+    justify-content: space-between;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 3px;
+}
+
+.face-2 .dot-1, .face-3 .dot-1, .face-4 .dot-3, .face-4 .dot-4, .face-5 .dot-3, .face-5 .dot-4 {
+    align-self: flex-end;
+}
+
+.face-2 .dot-2, .face-3 .dot-3, .face-4 .dot-1, .face-4 .dot-2, .face-5 .dot-1, .face-5 .dot-2 {
+    align-self: flex-start;
+}
+
+.face-4 .dot-2, .face-5 .dot-2 {
+    margin-top: 5px;
+}
+
+.face-5 .dot-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.selected {
+    background-color: lightcyan;
+}
+
+.avaialble-faces-settings {
+    position: absolute;
+    width: 125px;
+    top: 10px;
+    right: 10px;
+}

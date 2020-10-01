@@ -1,0 +1,50 @@
+grades {
+    display: block;
+}
+
+.plus {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.plus::before, .plus::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+    height: 4px;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
+.plus::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.cancel {
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.cancel::before, .cancel::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+    height: 4px;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
+.cancel::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+.cancel::before {
+    transform: translateY(-50%) rotate(-45deg);
+}
